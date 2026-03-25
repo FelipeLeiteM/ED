@@ -11,6 +11,6 @@ int main() {
 	int v = 5;
 	dpr(v);
 	
-	cout << "O valor dobrado é:" << v << endl;
+	cout << "O valor dobrado Ã©:" << v << endl;
     return 0;
 }
