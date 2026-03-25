@@ -10,9 +10,9 @@ int main(){
 	int numero = 7;
 	
 	if (ehPar(numero)){
-		cout << numero << "é numero par" << endl;
+		cout << numero << "Ã© numero par" << endl;
 	} else {
-		cout << numero << "não é um número par" << endl;
+		cout << numero << "nÃ£o Ã© um nÃºmero par" << endl;
 	}
 	
 	return 0;
