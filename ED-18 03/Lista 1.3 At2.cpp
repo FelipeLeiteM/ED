@@ -1,17 +1,24 @@
 #include <iostream>
+#include <list>
+
 using namespace std;
 
 int main() {
-    string lista[5];
+	
+    list<string> list;
 
-    cout << "Digite 5 palavras:\n";
-    for (int i = 0; i < 5; i++) {
-        cin >> lista[i];
-    }
-
+    list.push_back("1");
+	list.push_back("2");
+	list.push_back("3");
+	list.push_back("4");
+	list.push_back("5");
+	
+	list.reverse();
+	
     cout << "\nOrdem invertida:\n";
-    for (int i = 4; i >= 0; i--) {
-        cout << lista[i] << endl;
+    
+    for (auto element: list) {
+        cout << element << " ";
     }
 
     return 0;
