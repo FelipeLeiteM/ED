@@ -1,41 +1,33 @@
 #include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
 #include <list>
 
 using namespace std;
 
-int main()
-{
-	
-	setlocale(LC_ALL, "portuguese");
-	
+int main() {
+    list<int> lista;
+    int valor;
 
-	list<int> numlist;
+    cout << "Digite 10 numeros:\n";
+    for (int i = 0; i < 10; i++) {
+        cin >> valor;
+        lista.push_back(valor);
+    }
 	
-	numlist.push_back(1);
-	numlist.push_back(2);
-	numlist.push_back(3);
-	numlist.push_back(4);
-	numlist.push_back(5);
-	
-		list<int> numlist1;
-	
-	numlist1.push_back(1);
-	numlist1.push_back(2);
-	numlist1.push_back(3);
-	numlist1.push_back(4);
-	numlist1.push_back(5);
-	
+    for (auto it = lista.begin(); it != lista.end(); ++it) {
+        auto temp = it;
+        ++temp;
 
-	for(auto element: numlist){
-	
-	list<int> numlist2 =element;
-	
-	cout << element;
-	}
+        while (temp != lista.end()) {
+            if (*it == *temp)
+                temp = lista.erase(temp);
+            else
+                ++temp;
+        }
+    }
 
-	
-	
-	return 0;
+    cout << "\nLista sem duplicados: ";
+    for (int n : lista)
+        cout << n << " ";
+
+    return 0;
 }
