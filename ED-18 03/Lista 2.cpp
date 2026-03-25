@@ -27,7 +27,7 @@ int main()
 	numlist.pop_back();
 	numlist.pop_front();
 
-	cout << "Lista após remoção do primeiro e ultimo elementos:";
+	cout << "Lista apÃ³s remoÃ§Ã£o do primeiro e ultimo elementos:";
 	
 	for(auto element: numlist){
 		cout << element << " - ";
