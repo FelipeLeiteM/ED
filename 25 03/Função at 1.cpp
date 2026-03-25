@@ -12,7 +12,7 @@ int main(){
 	
 	double resultado = calcularMedia(valor1, valor2);
 	
-	cout << "A media de " << valor1 << " e " << valor2 << " é " << resultado << endl;
+	cout << "A media de " << valor1 << " e " << valor2 << " Ã© " << resultado << endl;
 	
 	return 0;
 }
