@@ -1,4 +1,5 @@
 #include <iostream>
+#include <locale>
 
 using namespace std;
 
@@ -7,10 +8,16 @@ bool Par(int numero){
 }
 
 int main(){
-	int numero = 7;
+	
+	setlocale(LC_ALL, "portuguese");
+	
+	int numero;
+	
+	cout << "Digite o número";
+	cin >> numero;
 	
 	if (Par(numero)){
-		cout << numero << "é numero par" << endl;
+		cout << numero << " é numero par" << endl;
 	} else {
 		cout << numero << "não é um número par" << endl;
 	}
